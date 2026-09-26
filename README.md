@@ -1,4 +1,4 @@
-# OCI Incident Intelligence
+<img src="assets/banner.svg" alt="oci-incident-intelligence" width="100%">
 
 > **Independent portfolio simulation** · Runnable offline · Optional OCI inference and Oracle DB integrations require your own tenancy and are **not live-tested**. No real incidents or Oracle internal systems.
 
@@ -13,12 +13,7 @@ A reference incident-intake workflow for SRE teams. It ranks synthetic incidents
 
 ## Architecture
 
-```text
-Synthetic incident JSON -> severity validation -> local feature-vector retrieval or OCI embeddings + Oracle DB vector retrieval
-     -> OCI Language entities (or deterministic offline SEV tags)
-     -> OCI Generative AI cited draft (or template offline)
-     -> JSON human review queue
-```
+<img src="assets/diagram.svg" alt="Architecture and workflow diagram" width="100%">
 
 The three runbooks and incidents are invented. The baseline now uses deterministic hashed lexical feature vectors with cosine similarity, **not learned semantic embeddings**. The optional OCI path can use OCI Generative AI embeddings and Oracle Database 23ai vector retrieval when separately provisioned. See the retrieval section below. Model output is an untrusted draft: a human must verify claims and citations before acting. The prompt asks the model to treat incident descriptions as untrusted data; this alone is not a prompt-injection defense.
 
