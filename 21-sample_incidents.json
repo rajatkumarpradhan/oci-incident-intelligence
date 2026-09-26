@@ -1,0 +1,5 @@
+[
+  {"id": "INC-100", "severity": "SEV2", "service": "payments-api", "description": "SEV2 payments-api error rate increased after deployment. Requests return 502; latency rising."},
+  {"id": "INC-101", "severity": "SEV1", "service": "inventory-db", "description": "SEV1 inventory-db connection pool saturated; database connections exhausted and timeouts increasing."},
+  {"id": "INC-102", "severity": "SEV3", "service": "unknown", "description": "SEV3 custom widget shows an unusual purple indicator."}
+]

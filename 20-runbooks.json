@@ -1,0 +1,5 @@
+[
+  {"id": "RB-PAYMENTS", "title": "Payments API 502 triage", "text": "For payments-api 502 errors after deployment, review deployment diff and error rate. Verify upstream health. A human incident commander decides whether to roll back."},
+  {"id": "RB-DB", "title": "Database connection exhaustion", "text": "For inventory-db database connections exhausted, inspect pool saturation, active sessions and client retry rate. Escalate to the database on-call before changing pool settings."},
+  {"id": "RB-NET", "title": "Network latency investigation", "text": "For network latency, inspect regional network metrics and service request latency before changing routes."}
+]

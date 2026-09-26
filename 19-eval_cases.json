@@ -1,0 +1,5 @@
+[
+ {"id":"payment", "query":"payments-api 502 error deployment", "expected":"RB-PAYMENTS"},
+ {"id":"database", "query":"inventory-db connections exhausted pool", "expected":"RB-DB"},
+ {"id":"network", "query":"regional network latency routes", "expected":"RB-NET"}
+]
