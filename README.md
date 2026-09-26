@@ -1,5 +1,12 @@
 # OCI Incident Intelligence
 
+> **Independent portfolio simulation** · Runnable offline · Optional OCI inference and Oracle DB integrations require your own tenancy and are **not live-tested**. No real incidents or Oracle internal systems.
+
+**Start here:** `python3 app.py --mode offline` · `python3 -m unittest -v` · `python3 evaluate.py`
+
+**Explore:** [Architecture](#architecture) · [Offline run](#run-offline) · [OCI setup](#connect-real-oci-inference) · [Retrieval and evaluation](#retrieval-ingest-and-evaluation) · [Limits](#limits-before-production)
+
+
 A reference incident-intake workflow for SRE teams. It ranks synthetic incidents by severity, retrieves relevant approved runbooks, extracts entities, and drafts cited triage notes for human review. Offline mode works without credentials. Optional live mode uses **OCI AI Language** for entity extraction and **OCI Generative AI** for a Cohere-format chat draft.
 
 > Portfolio simulation, not an Oracle internal system. Offline mode and tests were run. Live OCI requests require Rajat's tenancy and have not been exercised or deployed here. No incident is automatically resolved; no remediation command runs.
